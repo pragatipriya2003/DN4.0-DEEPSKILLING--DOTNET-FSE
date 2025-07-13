@@ -1,0 +1,76 @@
+1. RESTful Web Service, Web API & Microservice
+📌 RESTful Web Service
+REST = Representational State Transfer
+
+Architecture style for stateless communication using HTTP.
+
+Each resource (like a Product, User) is accessible via URL (e.g., /api/products).
+
+Communication uses standard HTTP verbs: GET, POST, PUT, DELETE.
+
+Response format is not limited to XML. Common formats:
+
+✅ JSON (default in .NET)
+
+✅ XML
+
+✅ Plain text
+
+📌 Web API
+Web API = HTTP-based interface that allows interaction between systems.
+
+.NET Web API allows you to build RESTful services using C#.
+
+Exposes endpoints via controllers and action methods.
+
+📌 Microservice
+Microservice = A small, self-contained service that handles a specific feature.
+
+Examples: OrderService, UserService, InventoryService
+
+Runs independently, often deployed in containers (e.g., Docker).
+
+Communicates with other services via HTTP, message queues, or gRPC.
+
+✅ 2. Features of REST Architecture
+Feature	Explanation
+Stateless	No session or memory of previous requests is stored by server
+Resources	Identified by URIs like /api/products/1
+HTTP Verbs	Used to perform operations (CRUD)
+Flexible Formats	Not limited to XML; JSON is preferred
+Uniform Interface	Simple and consistent API interface
+Client-Server	Clean separation between UI (client) and service (server)
+
+✅ 3. Difference: Web Service vs Web API
+Feature	Web Service (WCF/SOAP)	Web API (RESTful)
+Protocol	SOAP over HTTP	HTTP/HTTPS
+Format	XML only	JSON, XML, text, etc.
+Platform Dependency	More coupled with .NET	Platform-independent
+Lightweight	❌ No	✅ Yes
+Uses HTTP Verbs	❌ No	✅ Yes
+
+✅ 4. HTTP Request & Response
+📩 HttpRequest
+Data sent from client to server
+
+Includes:
+
+HTTP Verb (GET, POST, etc.)
+
+Headers (Authorization, Content-Type)
+
+URL and Query Strings
+
+Body (for POST/PUT)
+
+📤 HttpResponse
+Data sent from server to client
+
+Includes:
+
+Status Code (200, 404, etc.)
+
+Headers
+
+Body (response data in JSON, etc.)
+

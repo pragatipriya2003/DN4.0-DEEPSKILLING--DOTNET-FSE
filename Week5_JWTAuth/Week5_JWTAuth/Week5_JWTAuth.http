@@ -1,0 +1,6 @@
+@Week5_JWTAuth_HostAddress = http://localhost:5062
+
+GET {{Week5_JWTAuth_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
